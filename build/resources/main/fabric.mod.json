@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "lecterncrash",
+  "version": "1.0.0",
+
+  "name": "Lectern",
+  "description": "very sussy papermc crash exploit",
+  "authors": [
+    "Coderx_Gamer"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/lecterncrash/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.lecterncrash.MainClient"
+    ]
+  },
+  "mixins": [
+    "lecterncrash.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
